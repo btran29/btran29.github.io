@@ -13,6 +13,7 @@ img {
     border-radius: 7px;
 }
 
+
 /* centered content */
 
 .outer-container {
@@ -35,4 +36,31 @@ img {
 	padding: 20px;
 	width: 30%;
 	max-width: 15em;
+}
+
+/* mobile */
+@media only screen and (max-width : 768px) {
+	body {
+		font-family: sans-serif;
+		margin:0;
+		font-size: 110%;
+	}
+	
+	a:link, a:visited {
+		background-color: #aaa;
+		color: white;
+		padding: .5em .5em;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+	}
+
+	.centered-content {
+		display: inline-block;
+		text-align: left;
+		background: #fff;
+		padding: 1em;
+		width: 90%;
+		max-width: 15em;
+	}
 }

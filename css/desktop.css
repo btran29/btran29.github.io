@@ -5,7 +5,6 @@ body {
 	font-family: sans-serif;
 	margin:0;
 	font-size: 100%;
-	background: #FFFFFF;
 }
 
 img {
@@ -20,6 +19,7 @@ hr {
   border-top: 1px solid #8C8C8C;
 }
 
+
 /* layout */
 .outer-container {
 	position: absolute;
@@ -32,7 +32,6 @@ hr {
 	display: table-cell;
 	vertical-align: middle;
 	text-align: center;
-	padding: 1em;
 }
 
 .centered-content {
@@ -41,7 +40,7 @@ hr {
 	background: #FFFFFF;
 	width: 30%;
 	max-width: 15em;
-	padding: 1em;
+	margin: 1em;
 }
 
 
@@ -50,15 +49,6 @@ hr {
 	
 	a:link, a:visited {
 		font-size: 120%;
-		/*
-		background-color: #999999;
-		color: white;
-		padding: .5em .5em;
-		text-align: center;
-		text-decoration: none;
-		display: inline-block;
-		border-radius: 7px;
-		*/
 	}
 
 	.centered-content {

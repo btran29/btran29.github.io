@@ -39,7 +39,7 @@ img {
 }
 
 /* mobile */
-@media only screen and (max-width : 769px) {
+@media only screen and (max-width: 769px) {
 	body {
 		font-family: sans-serif;
 		margin:0;

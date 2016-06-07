@@ -1,8 +1,19 @@
-/* css for desktop */
+/* css */
 
 body {
-	font-family: "Arial, Helvetica, sans-serif";
+	font-family: sans-serif;
+	margin:0;
+	font-size: 100%;
 }
+
+img {
+	width: 100%;
+	max-width: 15em;
+	height: auto;
+    border-radius: 3px;
+}
+
+/* centered content */
 
 .outer-container {
 	position: absolute;
@@ -22,6 +33,6 @@ body {
 	text-align: left;
 	background: #fff;
 	padding: 20px;
-	border: 1px solid #000;
-	
+	width: 30%;
+	max-width: 15em;
 }

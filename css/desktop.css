@@ -1,9 +1,11 @@
 /* css */
 
+/* general styling */
 body {
 	font-family: sans-serif;
 	margin:0;
 	font-size: 100%;
+	background: #FFFFFF;
 }
 
 img {
@@ -13,9 +15,12 @@ img {
     border-radius: 7px;
 }
 
+hr {
+  border: 0;
+  border-top: 1px solid #8C8C8C;
+}
 
-/* centered content */
-
+/* layout */
 .outer-container {
 	position: absolute;
 	display: table;
@@ -27,40 +32,36 @@ img {
 	display: table-cell;
 	vertical-align: middle;
 	text-align: center;
+	padding: 1em;
 }
 
 .centered-content {
 	display: inline-block;
 	text-align: left;
-	background: #fff;
-	padding: 20px;
+	background: #FFFFFF;
 	width: 30%;
 	max-width: 15em;
+	padding: 1em;
 }
+
 
 /* mobile */
 @media only screen and (max-width: 769px) {
-	body {
-		font-family: sans-serif;
-		margin:0;
-		font-size: 110%;
-	}
 	
 	a:link, a:visited {
-		background-color: #aaa;
+		font-size: 120%;
+		/*
+		background-color: #999999;
 		color: white;
 		padding: .5em .5em;
 		text-align: center;
 		text-decoration: none;
 		display: inline-block;
+		border-radius: 7px;
+		*/
 	}
 
 	.centered-content {
-		display: inline-block;
-		text-align: left;
-		background: #fff;
-		padding: 1em;
 		width: 90%;
-		max-width: 15em;
 	}
 }

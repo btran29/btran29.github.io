@@ -1,3 +1,4 @@
+# Bio
 I study clinicians’ work to inform the design of automated documentation assistants.
 
 I am a MD-PhD student in Informatics at [University of California, Irvine](https://uci.edu/), in the [Health and Information lab](http://hai.ics.uci.edu/), focusing on [healthcare informatics](https://www.amia.org/fact-sheets/what-informatics). My research aims to help clinicians foreground patient-centered clinical activities in their work by automating less meaningful activities associated data entry and collection. My work bridges areas including human-computer interaction and computer supported collaborative work.

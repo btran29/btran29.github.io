@@ -4,6 +4,13 @@ remote_theme: compass
 url: http://btran29.github.io
 baseurl: ''
 
+#
+defaults:
+  -
+    values:
+      logo: "/images/headshot.png"
+      author: "Brian D. Tran"
+
 # compass configuration
 compass:
   # an avatar or logo (optional)

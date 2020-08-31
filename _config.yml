@@ -38,3 +38,5 @@ highlighter: rouge
 
 # Permalinks
 permalink: pretty
+
+theme: jekyll-theme-minimal

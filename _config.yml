@@ -1,5 +1,4 @@
 title: Brian D. Tran
 logo: /images/headshot.png
-description: Brian D. Tran Landing Page
-google_analytics:
+google_analytics: false
 theme: jekyll-theme-minimal

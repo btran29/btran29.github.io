@@ -1,4 +1,4 @@
 title: Brian D. Tran
 logo: /images/headshot.png
 google_analytics: false
-theme: jekyll-theme-minimal
+remote_theme: compass

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Name — MD-PhD Student, UC Irvine</title>
+<meta name="description" content="MD-PhD student studying clinicians' work and speech-focused technologies to inform the design of automated documentation assistance systems.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:wght@500;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #fbfaf7;      /* even, warm off-white — echoes the headshot backdrop */
+    --ink: #1c2e4a;        /* navy, pulled from the jacket */
+    --ink-soft: #45566e;   /* secondary text */
+    --trace: #b9c3cf;      /* hairline / waveform */
+    --accent: #2f7d6d;     /* clinical teal for links */
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "IBM Plex Sans", system-ui, sans-serif;
+    font-size: 1.0625rem;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  main {
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 5rem 1.5rem 4rem;
+  }
+
+  /* ---- Header ---- */
+  header {
+    display: flex;
+    align-items: center;
+    gap: 1.75rem;
+    flex-wrap: wrap;
+  }
+
+  .headshot {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    object-fit: cover;              /* crops the square photo to the circle */
+    border: 3px solid #fff;         /* clean rim hides the uneven backdrop edge */
+    box-shadow: 0 1px 4px rgba(28, 46, 74, 0.18);
+    flex-shrink: 0;
+  }
+
+  .masthead h1 {
+    font-family: "Spectral", Georgia, serif;
+    font-weight: 600;
+    font-size: 2rem;
+    letter-spacing: -0.01em;
+    line-height: 1.15;
+  }
+
+  .masthead .role {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.8125rem;
+    color: var(--ink-soft);
+    letter-spacing: 0.04em;
+    margin-top: 0.4rem;
+  }
+
+  /* ---- Thesis line ---- */
+  .thesis {
+    font-family: "Spectral", Georgia, serif;
+    font-weight: 500;
+    font-size: 1.35rem;
+    line-height: 1.45;
+    margin-top: 2.5rem;
+    text-wrap: balance;
+  }
+
+  /* ---- Links row ---- */
+  nav {
+    margin-top: 1.75rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.5rem;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.875rem;
+  }
+
+  nav a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 1px;
+    transition: border-color 120ms ease;
+  }
+
+  nav a:hover,
+  nav a:focus-visible {
+    border-bottom-color: var(--accent);
+  }
+
+  /* ---- Waveform divider: speech trace / cardiac rhythm ---- */
+  .trace {
+    display: block;
+    width: 100%;
+    height: 28px;
+    margin: 2.75rem 0 2.5rem;
+    color: var(--trace);
+  }
+
+  /* ---- Bio ---- */
+  .bio p { margin-bottom: 1.15rem; color: var(--ink-soft); }
+  .bio p:first-child { color: var(--ink); }
+
+  .bio a {
+    color: var(--accent);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+  }
+
+  .bio a:hover,
+  .bio a:focus-visible {
+    text-decoration-thickness: 2px;
+  }
+
+  a:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  footer {
+    margin-top: 3.5rem;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.75rem;
+    color: var(--ink-soft);
+  }
+
+  @media (max-width: 480px) {
+    main { padding-top: 3.5rem; }
+    header { gap: 1.25rem; }
+    .headshot { width: 104px; height: 104px; }
+    .masthead h1 { font-size: 1.65rem; }
+    .thesis { font-size: 1.2rem; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    * { transition: none !important; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <!-- Replace headshot.jpg with your photo's filename (square, any resolution) -->
+    <img class="headshot" src="images/headshot.jpg" alt="Portrait of Your Name">
+    <div class="masthead">
+      <h1>Your Name</h1>
+      <p class="role">MD-PhD Student · UC Irvine</p>
+    </div>
+  </header>
+
+  <p class="thesis">
+    I study clinicians&rsquo; work and speech-focused technologies to inform the
+    design of automated documentation assistance systems.
+  </p>
+
+  <nav aria-label="Profiles">
+    <!-- Replace the # placeholders with your profile URLs -->
+    <a href="#">Google Scholar</a>
+    <a href="#">LinkedIn</a>
+    <a href="#">Student Page</a>
+    <a href="#">GitHub</a>
+  </nav>
+
+  <!-- A hairline trace: part speech waveform, part cardiac rhythm -->
+  <svg class="trace" viewBox="0 0 640 28" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 14 H210 L222 14 228 8 234 20 240 3 246 25 252 10 258 14 H382 L390 14 396 9 402 19 408 5 414 23 420 11 426 14 H640"
+          fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  </svg>
+
+  <section class="bio">
+    <p>
+      I am a MD-PhD student in the
+      <a href="http://hai.ics.uci.edu/">Health and Information lab</a> at the
+      <a href="https://uci.edu/">University of California, Irvine</a>, with a
+      concentration on
+      <a href="https://www.amia.org/fact-sheets/what-informatics">healthcare informatics</a>.
+      My research aims to help clinicians foreground patient-centered clinical
+      activities in their work by automating data entry and collection. My work
+      bridges areas including human-computer interaction and computer-supported
+      cooperative work.
+    </p>
+    <p>
+      Previously, I earned a Bachelor&rsquo;s degree in Biochemistry and Molecular
+      Biology at University of California, Irvine. As an undergraduate research
+      assistant, I investigated altered physiology in childhood obesity at the
+      UC Irvine Pediatric Exercise and Genomics Research Center (UCI&nbsp;PERC).
+    </p>
+  </section>
+
+  <footer>&copy; 2026 Your Name</footer>
+</main>
+</body>
+</html>

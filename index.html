@@ -10,11 +10,11 @@
 <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@500;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
 <style>
   :root {
-    --paper: #fbfaf7;      /* even, warm off-white — echoes the headshot backdrop */
-    --ink: #1c2e4a;        /* navy, pulled from the jacket */
-    --ink-soft: #45566e;   /* secondary text */
-    --trace: #b9c3cf;      /* hairline / waveform */
-    --accent: #2f7d6d;     /* clinical teal for links */
+    --paper: #fbfaf7; 
+    --ink: #1c2e4a;
+    --ink-soft: #45566e;
+    --trace: #b9c3cf;
+    --accent: #2f7d6d;   
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -48,8 +48,8 @@
     width: 128px;
     height: 128px;
     border-radius: 50%;
-    object-fit: cover;              /* crops the square photo to the circle */
-    border: 3px solid #fff;         /* clean rim hides the uneven backdrop edge */
+    object-fit: cover;
+    border: 3px solid #fff; 
     box-shadow: 0 1px 4px rgba(28, 46, 74, 0.18);
     flex-shrink: 0;
   }
@@ -165,7 +165,6 @@
 <body>
 <main>
   <header>
-    <!-- Replace headshot.jpg with your photo's filename (square, any resolution) -->
     <img class="headshot" src="/images/headshot.jpg" alt="Portrait of Brian D. Tran">
     <div class="masthead">
       <h1>Brian D. Tran</h1>
@@ -179,7 +178,6 @@
   </p>
 
   <nav aria-label="Profiles">
-    <!-- Replace the # placeholders with your profile URLs -->
     <a href="https://scholar.google.com/citations?hl=en&user=GxpHmkkAAAAj">Google Scholar</a>
     <a href="https://www.linkedin.com/in/brian-tran-6844ab64">LinkedIn</a>
     <a href="http://www.mstp.uci.edu/">MSTP Student Page</a>
@@ -188,7 +186,6 @@
 
   <p class="email">Email me at bdtran [at] hs.uci.edu</p>
 
-  <!-- A hairline trace: part speech waveform, part cardiac rhythm -->
   <svg class="trace" viewBox="0 0 640 28" preserveAspectRatio="none" aria-hidden="true">
     <path d="M0 14 H210 L222 14 228 8 234 20 240 3 246 25 252 10 258 14 H382 L390 14 396 9 402 19 408 5 414 23 420 11 426 14 H640"
           fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
@@ -214,7 +211,7 @@
     </p>
   </section>
 
-  <footer>&copy; 2026 Brian Tran</footer>
+  <footer>&copy; 2026 Brian D. Tran</footer>
 </main>
 </body>
 </html>
